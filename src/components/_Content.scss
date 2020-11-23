@@ -1,0 +1,27 @@
+@import "../modules/spacings";
+@import "../modules/text-align";
+
+$Content-max-width: 1280 !default;
+
+.#{$__prefix}-Content {
+  width: 100%;
+  max-width: $Content-max-width;
+  margin: 0 auto;
+
+  padding: $__sizing-unit / 2;
+  @include breakpoint-width-up($__breakpoint-medium) {
+    padding: $__sizing-unit;
+  }
+
+  @include breakpoint-width-up($__breakpoint-large) {
+    padding: $__sizing-unit * 2;
+  }
+
+  &.centered {
+    @include center-align;
+  }
+
+  &.v-padding-0 {
+    @include v-padding-0;
+  }
+}

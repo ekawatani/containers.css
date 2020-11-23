@@ -1,0 +1,14 @@
+@import "../modules/spacings";
+@import "../modules/text-align";
+
+.#{$__prefix}-Band {
+  padding: $__sizing-unit * 2;
+
+  &.centered {
+    @include center-align;
+  }
+
+  &.v-padding-0 {
+    @include v-padding-0;
+  }
+}

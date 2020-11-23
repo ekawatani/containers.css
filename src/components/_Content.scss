@@ -1,10 +1,9 @@
 @import "../modules/spacings";
 @import "../modules/text-align";
 
-$Content-max-width: 1280 !default;
+$Content-max-width: 1280px !default;
 
 .#{$__prefix}-Content {
-  width: 100%;
   max-width: $Content-max-width;
   margin: 0 auto;
 

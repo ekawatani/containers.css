@@ -2,7 +2,14 @@
 @import "../modules/text-align";
 
 .#{$__prefix}-Band {
-  padding: $__sizing-unit * 2;
+  padding: $__sizing-unit / 2;
+  @include breakpoint-width-up($__breakpoint-medium) {
+    padding: $__sizing-unit;
+  }
+
+  @include breakpoint-width-up($__breakpoint-large) {
+    padding: $__sizing-unit * 2;
+  }
 
   &.centered {
     @include center-align;

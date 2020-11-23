@@ -1,11 +1,11 @@
 {
   "name": "containers.css",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "A set of CSS classes for different kinds of containers",
   "scripts": {
-    "build": "node-sass --output-style compressed container.scss css/container.css"
+    "build": "node-sass --output-style compressed container.scss css/container.min.css"
   },
-  "author": "Eigo Kawatani",
+  "author": "ekawatani",
   "license": "MIT",
   "devDependencies": {
     "node-sass": "^5.0.0"

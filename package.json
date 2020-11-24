@@ -4,7 +4,7 @@
   "description": "A set of CSS classes for different kinds of containers",
   "scripts": {
     "dev": "npm run build -- --watch",
-    "build": "node-sass --output-style compressed container.scss css/container.min.css"
+    "build": "node-sass --output-style compressed containers.scss css/containers.min.css"
   },
   "author": "ekawatani",
   "license": "MIT",

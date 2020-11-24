@@ -1,21 +1,29 @@
-@import "../modules/spacings";
-@import "../modules/text-align";
+@use "../modules/spacings";
+@use "../modules/text-align";
 
-.#{$__prefix}-Band {
-  padding: $__sizing-unit / 2;
-  @include breakpoint-width-up($__breakpoint-medium) {
-    padding: $__sizing-unit;
+@if ($containers-css-components-Band) {
+
+
+
+.#{$containers-css-prefix}-Band {
+  padding: $SIZING_UNIT / 2;
+  @include breakpoint-width-up($containers-css-breakpoint-m) {
+    padding: $SIZING_UNIT;
   }
 
-  @include breakpoint-width-up($__breakpoint-large) {
-    padding: $__sizing-unit * 2;
+  @include breakpoint-width-up($containers-css-breakpoint-l) {
+    padding: $SIZING_UNIT * 2;
   }
 
   &.centered {
-    @include center-align;
+    @include text-align.center-align;
   }
 
   &.v-padding-0 {
-    @include v-padding-0;
+    @include spacings.v-padding-0;
   }
+}
+
+
+
 }

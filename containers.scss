@@ -1,13 +1,11 @@
 // Settings
 @import "./src/settings/breakpoints";
-@import "./src/settings/units";
+@import "./src/settings/spacing-units";
 @import "./src/settings/settings";
 
 // Tools
 @import "./src/tools/media-query";
 
-// Base
-
 // Components
-@import "./src/components/Content";
 @import "./src/components/Band";
+@import "./src/components/Content";

@@ -1,1 +1,6 @@
-$__prefix: 'container' !default;
+$containers-css-prefix: 'containers' !default;
+
+// Components
+$containers-css-components-all: false !default;
+$containers-css-components-Band: false or $containers-css-components-all !default;
+$containers-css-components-Content: false or $containers-css-components-all !default;

@@ -4,12 +4,12 @@
   "description": "A set of CSS classes for different kinds of containers",
   "scripts": {
     "dev": "npm run build -- --watch",
-    "build": "node-sass --output-style compressed containers.scss css/containers.min.css"
+    "build": "sass all.scss css/containers.min.css --no-source-map --style compressed"
   },
   "author": "ekawatani",
   "license": "MIT",
   "devDependencies": {
-    "node-sass": "^5.0.0"
+    "sass": "^1.29.0"
   },
   "dependencies": {}
 }

@@ -11,10 +11,7 @@ $Content-max-width: 1280px !default;
   max-width: $Content-max-width;
   margin: 0 auto;
 
-  padding: $SIZING_UNIT / 2;
-  @include breakpoint-width-up($containers-css-breakpoint-m) {
-    padding: $SIZING_UNIT;
-  }
+  padding: $SIZING_UNIT;
 
   @include breakpoint-width-up($containers-css-breakpoint-l) {
     padding: $SIZING_UNIT * 2;
@@ -26,6 +23,15 @@ $Content-max-width: 1280px !default;
 
   &.v-padding-0 {
     @include spacings.v-padding-0;
+  }
+
+  &.h-padding-0 {
+    @include spacings.h-padding-0;
+  }
+
+  &.no-padding {
+    @include spacings.v-padding-0;
+    @include spacings.h-padding-0;
   }
 }
 

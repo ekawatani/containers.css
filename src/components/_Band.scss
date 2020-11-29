@@ -6,10 +6,7 @@
 
 
 .#{$containers-css-prefix}-Band {
-  padding: $SIZING_UNIT / 2;
-  @include breakpoint-width-up($containers-css-breakpoint-m) {
-    padding: $SIZING_UNIT;
-  }
+  padding: $SIZING_UNIT;
 
   @include breakpoint-width-up($containers-css-breakpoint-l) {
     padding: $SIZING_UNIT * 2;
@@ -21,6 +18,15 @@
 
   &.v-padding-0 {
     @include spacings.v-padding-0;
+  }
+
+  &.h-padding-0 {
+    @include spacings.h-padding-0;
+  }
+
+  &.no-padding {
+    @include spacings.v-padding-0;
+    @include spacings.h-padding-0;
   }
 }
 
